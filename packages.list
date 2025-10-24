@@ -1,0 +1,33 @@
+# Essenciais
+git
+base-devel
+
+# Ambiente Gráfico (Base Omarchy)
+hyprland
+waybar
+alacritty # Terminal padrão
+mako      # Notificações
+swaybg    # Wallpaper
+nautilus  # Gerenciador de arquivos principal
+xdg-desktop-portal-hyprland
+xdg-desktop-portal-gtk
+polkit-gnome # Agente de autenticação
+
+# Temas e Aparência
+gnome-themes-extra # Contém Adwaita-dark
+adw-gtk3           # Adwaita para GTK3
+yaru-icon-theme    # Tema de ícones (usaremos uma variante)
+noto-fonts
+noto-fonts-cjk
+noto-fonts-emoji
+ttf-jetbrains-mono-nerd # Fonte monoespaçada padrão
+ttf-cascadia-mono-nerd  # Fonte alternativa usada em Omarchy
+
+# Utilitários
+grim      # Screenshot
+slurp     # Seleção de área para screenshot
+wl-clipboard # Copiar/Colar Wayland
+jq        # Processamento JSON (útil para scripts)
+gum       # Ferramenta CLI interativa (usada em Omarchy)
+
+# Adicione outros pacotes essenciais do Omarchy que desejar aqui...
