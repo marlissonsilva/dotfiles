@@ -16,10 +16,15 @@ fi
 fi
 
 
-# Ler pacotes da lista e instalar
-mapfile -t packages < <(grep -v '^#' "$DOTFILES_DIR/packages.list" | grep -v '^$')
+# Ler pacotes da lista, removendo comentários e espaços extras
+mapfile -t packages < <(awk '!/^($|#)/{sub(/#.*/,""); print $1}' "$DOTFILES_DIR/packages.list")
 
-# Atualizar repositórios e instalar
-sudo pacman -Syu --noconfirm --needed "${packages[@]}"
+# Sincronizar repositórios e instalar
+# A flag -y é crucial para garantir que a lista de pacotes esteja atualizada
+echo "Sincronizando bancos de dados de pacotes..."
+sudo pacman -Sy --noconfirm
+
+echo "Instalando pacotes..."
+sudo pacman -S --noconfirm --needed "${packages[@]}"
 
 echo "Instalação de pacotes concluída."
