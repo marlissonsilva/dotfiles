@@ -1,0 +1,33 @@
+# Essenciais
+git
+base-devel # Necessário para construir pacotes (como o yay)
+
+# Ambiente Gráfico Base
+hyprland
+waybar
+alacritty # Terminal padrão
+mako      # Notificações
+swaybg    # Wallpaper
+nautilus  # Gerenciador de arquivos principal
+xdg-desktop-portal-hyprland
+xdg-desktop-portal-gtk # Necessário para portais de arquivos GTK
+polkit-gnome # Agente de autenticação
+
+# Temas e Aparência (Oficiais)
+gnome-themes-extra # Contém Adwaita-dark
+adw-gtk3           # Tema Adwaita para GTK3
+yaru-icon-theme    # Tema de ícones (variante será definida no script 03)
+noto-fonts
+noto-fonts-cjk
+noto-fonts-emoji
+ttf-nerd-fonts-symbols # Símbolos Nerd Font base (muitos terminais/barras precisam)
+swayosd            # OSD para volume/brilho (está nos repos oficiais agora)
+
+# Utilitários (Oficiais)
+grim      # Screenshot Wayland
+slurp     # Seleção de área Wayland
+wl-clipboard # Copiar/Colar Wayland
+jq        # Processamento JSON
+gum       # Ferramenta CLI interativa
+reflector # Atualizador de Mirrorlist
+mise      # Gerenciador de versões (ex: node, ruby)

@@ -1,0 +1,17 @@
+# Helpers AUR
+yay  # Será instalado via script se não existir
+
+# Fontes Nerd Fonts Específicas (Exemplos do Omarchy)
+ttf-jetbrains-mono-nerd
+ttf-cascadia-mono-nerd
+# ttf-ia-writer # Outra fonte usada no Omarchy, se desejar
+
+# Ferramentas Screenshot (Do Omarchy)
+satty # Editor rápido de screenshot
+wayfreeze-git # Congela a tela para slurp
+
+google-chrome
+
+# Adicione outros pacotes do AUR aqui, um por linha
+# Exemplo: visual-studio-code-bin
+# Exemplo: google-chrome
